@@ -1,0 +1,19 @@
+2023-07-02 05:21:46.256 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-07-02 05:21:46.256 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-07-02 05:21:46.257 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-07-02 05:21:46.257 [info] Test server listening.
+2023-07-02 05:21:46.257 [info] Python interpreter path: /bin/python3
+2023-07-02 05:21:48.165 [info] Starting Pylance language server.
+2023-07-02 05:22:10.829 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-02 05:22:11.102 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/foHq.py
+2023-07-02 05:22:11.815 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/u5kh.py
+2023-07-02 05:22:15.659 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-02 05:23:38.937 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-02 05:23:39.225 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/Y3n9.py
+2023-07-02 05:23:39.552 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/IQiH.py
+2023-07-02 05:24:50.797 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/9q51.py
+2023-07-02 05:24:51.118 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/e3eF.py
+2023-07-02 05:25:16.882 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-02 05:25:17.155 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/BFqB.py
+2023-07-02 05:25:17.479 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/c0rH.py
+2023-07-02 05:32:22.386 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py

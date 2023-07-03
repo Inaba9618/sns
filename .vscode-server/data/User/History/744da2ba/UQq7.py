@@ -1,0 +1,106 @@
+""" DBのtable設計とCRUDメソッド群 """
+
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager, UserMixin, current_user
+from flaskr.views import app
+from flask_bcrypt import generate_password_hash, check_password_hash
+from datetime import datetime
+import os
+from sqlalchemy import and_, or_, desc
+
+DB_URI = 'sqlite:///sns.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = DB_URI
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config["SECRET_KEY"] = os.urandom(24)
+
+db = SQLAlchemy(app)
+login_manager = LoginManager(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    """ LoginManagerをDBに対して動作させるためのメソッド """
+    return User.query.get(user_id)
+
+
+class User(db.Model, UserMixin):
+    """ ログインセッションを管理するUserテーブル """
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(32), index=True)
+    email = db.Column(db.String(32), index=True, unique=True)
+    password = db.Column(db.Text)
+    comment = db.Column(db.Text, default='')
+    picture_path = db.Column(db.Text, nullable=True)
+    is_active = db.Column(db.Boolean, default=True)  # login_managerで必要
+    create_at = db.Column(db.DateTime, default=datetime.now)  # datetime.now()では変になる
+    update_at = db.Column(db.DateTime, default=datetime.now)
+
+    def __init__(self, username, email, password):
+        """ ユーザ名、メール、パスワードが入力必須 """
+        self.username = username
+        self.email = email
+        self.password = generate_password_hash(password).decode('utf-8')
+
+    def check_password(self, password):
+        """ パスワードをチェックしてTrue/Falseを返す """
+        return check_password_hash(self.password, password)
+
+    def reset_password(self, password):
+        """ 再設定されたパスワードをDBにアップデート """
+        self.password = generate_password_hash(password).decode('utf-8')
+
+    @classmethod
+    def select_by_id(cls, id):
+        """ UserテーブルからidでSELECTされたインスタンスを返す """
+        return cls.query.get(id)
+
+    @classmethod
+    def select_by_email(cls, email):
+        """ UserテーブルからemailでSELECTされたインスタンスを返す """
+        return cls.query.filter_by(email=email).first()
+
+
+    @classmethod
+    def select_by_username(cls, username):
+        return cls.query.filter(
+            cls.username.like(f'%{username}%'),  # 両方向部分一致検索
+            cls.id != int(current_user.get_id()),
+        ).all()
+
+class UserConnect(db.Model):
+    """ Userの友達状態を記録するテーブル """
+    id = db.Column(db.Integer, primary_key=True)
+    from_user_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # user.idを外部キーとする
+    to_user_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # user.idを外部キーとする
+    status = db.Column(db.Integer, default=0)
+    create_at = db.Column(db.DateTime, default=datetime.now)  # datetime.now()では変になる
+    update_at = db.Column(db.DateTime, default=datetime.now)
+
+    def __init__(self, from_user_id, to_user_id, status=0):
+        self.from_user_id = from_user_id
+        self.to_user_id = to_user_id
+        self.status = status
+
+    @classmethod
+    def select_connect(cls, from_user_id, to_user_id):
+        """ fromとtoを指定してSELECTされた友達関係を返す """
+        return cls.query.filter_by(
+            from_user_id = from_user_id,
+            to_user_id = to_user_id
+            ).first()
+
+    @classmethod
+    def select_id(cls, id1, id2):
+        """ 1対の友達関係をSELECTして友達関係を返す """
+        return cls.query.filter(
+            or_(
+                and_(
+                    UserConnect.from_user_id == id1,  # Class.が必要
+                    UserConnect.to_user_id == id2,  # filter_byと違って== になる
+                ),
+                and_(
+                    UserConnect.from_user_id == id2,
+                    UserConnect.to_user_id == id1,
+                ),
+            ),
+        ).first()

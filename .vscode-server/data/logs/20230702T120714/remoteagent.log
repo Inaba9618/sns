@@ -1,0 +1,66 @@
+2023-07-02 12:07:15.370 [info] 
+
+
+
+
+2023-07-02 12:07:15.417 [info] Extension host agent started.
+2023-07-02 12:07:15.778 [info] [127.0.0.1][92553eb1][ManagementConnection] New connection established.
+2023-07-02 12:07:15.972 [info] [127.0.0.1][29b69bc8][ExtensionHostConnection] New connection established.
+2023-07-02 12:07:16.468 [info] [127.0.0.1][29b69bc8][ExtensionHostConnection] <6639> Launched Extension Host Process.
+2023-07-02 12:07:22.888 [info] [127.0.0.1][92553eb1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-07-02 12:07:22.905 [info] [127.0.0.1][29b69bc8][ExtensionHostConnection] <6639> Extension Host Process exited with code: 0, signal: null.
+2023-07-02 12:07:22.905 [info] Cancelling previous shutdown timeout
+2023-07-02 12:07:22.906 [info] Last EH closed, waiting before shutting down
+2023-07-02 12:07:26.688 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-07-02 12:07:26.688 [info] Cancelling previous shutdown timeout
+2023-07-02 12:07:27.148 [info] [127.0.0.1][929c45b6][ManagementConnection] New connection established.
+2023-07-02 12:07:27.378 [info] [127.0.0.1][9ed1ca51][ExtensionHostConnection] New connection established.
+2023-07-02 12:07:27.385 [info] [127.0.0.1][9ed1ca51][ExtensionHostConnection] <6742> Launched Extension Host Process.
+2023-07-02 12:07:29.619 [error] CodeExpectedError: Could not find pty on pty host
+    at k.L (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:6920)
+    at k.updateTitle (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:2627)
+    at Object.call (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:17:5058)
+    at h.s (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at h.q (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at l.invoke (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at u.deliver (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:2125)
+    at s.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:1733)
+    at process.z (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:9:21144)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:939:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-07-02 12:12:26.690 [info] New EH opened, aborting shutdown
+2023-07-02 12:14:50.547 [error] Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1247:16)
+2023-07-02 12:14:50.550 [error] Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1247:16)
+2023-07-02 12:14:54.270 [error] Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1247:16)
+2023-07-02 12:29:44.781 [info] [127.0.0.1][929c45b6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-07-02 12:29:44.846 [info] [127.0.0.1][9ed1ca51][ExtensionHostConnection] <6742> Extension Host Process exited with code: 0, signal: null.
+2023-07-02 12:29:44.846 [info] Last EH closed, waiting before shutting down
+2023-07-02 12:29:46.947 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-07-02 12:29:46.947 [info] Cancelling previous shutdown timeout
+2023-07-02 12:29:47.414 [info] [127.0.0.1][9ca61e45][ManagementConnection] New connection established.
+2023-07-02 12:29:47.632 [info] [127.0.0.1][770aa202][ExtensionHostConnection] New connection established.
+2023-07-02 12:29:47.638 [info] [127.0.0.1][770aa202][ExtensionHostConnection] <8475> Launched Extension Host Process.
+2023-07-02 12:29:49.518 [error] CodeExpectedError: Could not find pty on pty host
+    at k.L (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:6920)
+    at k.updateTitle (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:2627)
+    at Object.call (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:17:5058)
+    at h.s (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at h.q (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at l.invoke (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at u.deliver (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:2125)
+    at s.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:1733)
+    at process.z (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:9:21144)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:939:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-07-02 12:29:49.560 [info] [127.0.0.1][9ca61e45][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-07-02 12:29:49.781 [info] [127.0.0.1][770aa202][ExtensionHostConnection] <8475> Extension Host Process exited with code: 0, signal: null.
+2023-07-02 12:29:49.781 [info] Cancelling previous shutdown timeout
+2023-07-02 12:29:49.781 [info] Last EH closed, waiting before shutting down
+2023-07-02 12:34:49.782 [info] Last EH closed, shutting down

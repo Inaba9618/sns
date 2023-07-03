@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% from "_helpers.html" import render_field %}
+
+{% block container %}
+  <!-- 投稿の表示 -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">タイトル：{{ post.title }}</h5>
+      <p class="card-text">内容：{{ post.detail }}</p>
+      <p class="card-text">ユーザー：{{ post.username }}</p>
+    </div>
+  </div>
+
+  <h2>返信する</h2>
+  <form id="reply-form" method="POST" action="{{ url_for('post_detail', post_id=post.id) }}">
+    <div class="form-group">
+      {{ render_field(form.content, class="form-control", rows=4) }}
+    </div>
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // 返信フォームをブラウザの下部に固定
+      var replyForm = $('#reply-form');
+      var windowHeight = $(window).height();
+  
+      $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        var windowBottom = scrollTop + windowHeight;
+        var formBottom = replyForm.offset().top + replyForm.outerHeight();
+  
+        if (formBottom > windowBottom) {
+          replyForm.addClass('fixed-bottom');
+        } else {
+          replyForm.removeClass('fixed-bottom');
+        }
+      });
+    });
+  </script>
+  
+
+  <!-- 返信一覧 -->
+  <h2>返信一覧</h2>
+  {% if post.replies %}
+    <div class="replies">
+      {% for reply in post.replies %}
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text">投稿者：{{ reply.username }}</p>
+            <p class="card-text">内容：{{ reply.content }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>まだ返信はありません。</p>
+  {% endif %}
+{% endblock %}

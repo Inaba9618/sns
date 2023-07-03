@@ -1,0 +1,7 @@
+2023-07-03 03:00:08.710 [info] 実験 'pythonPromptNewFormatterExt' はアクティブです
+2023-07-03 03:00:08.710 [info] 実験 'pythonPromptNewToolsExt' はアクティブです
+2023-07-03 03:00:08.710 [info] 実験 'pythonSurveyNotification' はアクティブです
+2023-07-03 03:00:08.711 [info] Test server listening.
+2023-07-03 03:00:08.711 [info] Python インタープリター パス: /usr/bin/python3
+2023-07-03 03:00:11.358 [info] Pylance 言語サーバーを開始しています。
+2023-07-03 03:21:30.536 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/test.py

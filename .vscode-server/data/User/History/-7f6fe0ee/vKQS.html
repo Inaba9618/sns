@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% from "_helpers.html" import render_field %}
+
+{% block container %}
+  <!-- 投稿の表示 -->
+  <h2>投稿内容</h2>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">タイトル：{{ post.title }}</h5>
+      <p class="card-text">内容：{{ post.detail }}</p>
+      <p class="card-text">ユーザーID：{{ post.user_id }}</p>
+    </div>
+  </div>
+
+  <!-- 返信フォーム -->
+  <h2>返信する</h2>
+  <form method="POST" action="{{ url_for('post_detail', post_id=post.id) }}">
+    <div class="form-group">
+      {{ render_field(form.content, class="form-control", rows=4) }}
+    </div>
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+
+  <!-- 返信一覧 -->
+  <h2>返信一覧</h2>
+  {% if post.replies %}
+    <div class="replies">
+      {% for reply in post.replies %}
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text">投稿者：{{ reply.user_id }}</p>
+            <p class="card-text">内容：{{ reply.content }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>まだ返信はありません。</p>
+  {% endif %}
+{% endblock %}

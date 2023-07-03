@@ -1,0 +1,15 @@
+<h1>好きなアニメ</h1>
+
+<form method='POST'>
+    {{form.name.label}} {{form.name()}}
+    <br>
+    {{form.like_anime.label}} {{form.like_anime()}}
+    <br>
+    {{form.rate.label}} {{form.rate()}}
+    <br>
+    {{form.submit()}}
+</form>
+
+{% if name %}
+<p>{{name}}さんの好きなアニメは{{like_anime}}で、点数で言うと{{rate}}点くらいらしい</p>
+{% endif %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "_helpers.html" import render_field %}
+{% from "_helpers.html" import validate_picture %}
+
+{% block title %}
+    Message{{super()}}
+{% endblock %}
+
+{% block container %}
+
+<h1>メッセージ画面</h1>
+{% for message in messages %}
+
+    {% if message.from_user_id == (current_user.get_id()|int) %}
+        <!-- 自分側 -->
+        <div class="col-md-2">
+            {{validate_picture(current_user, 'image-mini')}}
+            <p>{{current_user.username}}</p>
+        </div>
+        <div class="speech-bubble-self col-md-4">
+            {{message.message|urlize(target=true)}}
+            <p></p>
+            <p>{{message.create_at.strftime('%H:%M')}}</p>
+        </div>
+
+    {% else %}
+        <!-- 相手側 -->
+        <div class="col-md-6"></div>
+        <div class="speech-bubble-dest col-md-4">
+            {{message.message|urlize(target=true)}}
+            <p></p>
+            <p>{{message.create_at.strftime('%H:%M')}}</p>
+        </div>
+        <div class="col-md-2">
+            {{validate_picture(friend, 'image-mini')}}
+            <p>{{friend.username}}</p>
+        </div>
+    {% endif %}
+
+{% endfor %}
+
+<form id="message-form" method="POST" action="{{url_for('message', to_user_id=friend.id)}}">
+    {{form.to_user_id(value=friend.id)}}
+    {{render_field(form.message, cols="50", rows="5")}}
+    {{form.submit()}}
+</form>
+
+{% endblock %}

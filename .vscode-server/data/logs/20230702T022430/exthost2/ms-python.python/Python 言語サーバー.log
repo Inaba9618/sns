@@ -1,0 +1,17 @@
+2023-07-02 02:24:44.487 [info] [Info  - 2:24:44 AM] (2631) Pylance language server 2023.6.40 (pyright 3f84540e) starting
+2023-07-02 02:24:44.490 [info] [Info  - 2:24:44 AM] (2631) Server root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-02 02:24:44.497 [info] [Info  - 2:24:44 AM] (2631) Starting service instance "ec2-user"
+2023-07-02 02:24:44.637 [info] [Info  - 2:24:44 AM] (2631) Setting pythonPath for service "ec2-user": "/usr/bin/python3"
+2023-07-02 02:24:44.638 [info] [Warn  - 2:24:44 AM] (2631) stubPath /home/ec2-user/typings is not a valid directory.
+2023-07-02 02:24:44.729 [info] [Info  - 2:24:44 AM] (2631) Assuming Python version 3.9
+2023-07-02 02:24:44.983 [info] [Info  - 2:24:44 AM] (2631) Found 5 source files
+2023-07-02 02:24:46.684 [info] [Info  - 2:24:46 AM] (2631) Background analysis(1) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-02 02:24:46.687 [info] [Info  - 2:24:46 AM] (2631) Background analysis(1) started
+2023-07-02 02:24:47.463 [info] [Info  - 2:24:47 AM] (2631) Indexer background runner(2) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist (index)
+2023-07-02 02:24:47.464 [info] [Info  - 2:24:47 AM] (2631) Indexing(2) started
+2023-07-02 02:24:50.497 [info] [Info  - 2:24:50 AM] (2631) [IDX(2)] Long operation: scan packages /home/ec2-user (2998ms)
+2023-07-02 02:24:50.497 [info] [Info  - 2:24:50 AM] (2631) scanned(2) 93 files over 1 exec env
+2023-07-02 02:24:50.945 [info] [Info  - 2:24:50 AM] (2631) indexed(2) 68 files over 1 exec env
+2023-07-02 02:24:50.988 [info] [Info  - 2:24:50 AM] (2631) Indexing finished(2).
+2023-07-02 02:24:56.637 [info] [Info  - 2:24:56 AM] (2631) [BG(1)] Long operation: checking: /home/ec2-user/flaskr/views.py (8635ms)
+2023-07-02 02:24:56.637 [info] [Info  - 2:24:56 AM] (2631) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/views.py (9948ms)

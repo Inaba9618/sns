@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% from "_helpers.html" import validate_picture %}
+
+{% block title%}
+    Home{{super()}}
+{% endblock %}
+
+{% block container %}
+<h1>ホーム画面</h1>
+
+<div class="row">
+    <div class="col-lg-4">
+        {% if current_user.is_authenticated %}
+            {{validate_picture(current_user, 'image-big')}}
+            <p>ユーザ名：{{current_user.username}}</p>
+            <p>一言コメント：{{current_user.comment}}</p>
+        {% else %}
+            <p>ログインするのじゃ</p>
+        {% endif %}
+    </div>
+
+    <div class="col-lg-4">
+        <h2>投稿内容</h2>
+        {% if posts %}
+            {% for post in posts %} 
+                <p>タイトル：{{ post.title }}</p>
+                <p>内容：{{ post.detail }}</p>
+                <p>ユーザーID：{{ post.user_id }}</p>
+                <p><a href="{{ url_for('post_detail', post_id=post.id) }}">詳細を表示</a></p>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="col-lg-4">
+        {% if friends %}
+            <h2>友達一覧</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <!-- 友達一覧の表示 -->
+                </table>
+            </div>
+        {% endif %}
+
+        {% if requested_friends %}
+            <h2>承認待ちユーザ</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <!-- 承認待ちユーザの表示 -->
+                </table>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

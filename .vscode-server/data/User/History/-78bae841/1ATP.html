@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>{% block title %} - FLASK_SNS{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{{url_for('home')}}">FLASK_SNS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                {% if current_user.is_authenticated %}
+                <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">ホーム</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('logout')}}">ログアウト</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('setting')}}">アカウント情報編集</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('user_search')}}">ユーザ検索</a></li>
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="{{url_for('login')}}">ログイン</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('register')}}">登録</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        {% block container %}
+        {% endblock %}
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-K+L37lxbyXlSzhsLZLBWONFCFpXQ4VhGvXYF+7hSEKqCteiCf+Q8wsWLnOqJe3AN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-RN2SwyV9MD7sbOnwFEmTjxuPncAzx9Z4u5WS8gdHxE6E6bTz1a0a7TAYoKTuYVZQ" crossorigin="anonymous"></script>
+</body>
+</html>

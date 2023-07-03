@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% from "_helpers.html" import validate_picture %}
+
+{% block title%}
+    Home{{super()}}
+{% endblock %}
+
+{% block container %}
+{% if current_user.is_authenticated %}
+    <div class="row">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                モーダルを開く
+            </button>
+        
+            <!-- モーダル -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">モーダルのタイトル</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>モーダルの内容</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Bootstrap JavaScript -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </div>
+        </div>
+        <div class="col-md-3">
+            <!-- 投稿内容の表示 -->
+            {% if posts %}
+                {% for post in posts %} 
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">タイトル：{{ post.title }}</h5>
+                            <p class="card-text">内容：{{ post.detail }}</p>
+                            <p class="card-text">ユーザー：{{ post.username }}</p>
+                            <a href="{{ url_for('post_detail', post_id=post.id) }}" class="btn btn-primary">詳細を表示</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    {{validate_picture(current_user, 'image-big')}}
+                    <p class="card-text">ユーザ名：{{current_user.username}}</p>
+                    <p class="card-text">一言コメント：{{current_user.comment}}</p>
+                </div>
+            </div>
+
+            {% if friends %}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">友達一覧</h5>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>友達名</th>
+                                        <th>友達画像</th>
+                                        <th>コメント</th>
+                                        <th>メッセージ</th>
+                                        <th>友達解除</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for friend in friends %}
+                                        <tr>
+                                            <td>{{loop.index}}</td>
+                                            <td>{{friend.username}}</td>
+                                            <td>{{validate_picture(friend, 'image-small')}}</td>
+                                            <td>{{friend.comment}}</td>
+                                            <td><a href="{{url_for('message', to_user_id=friend.id)}}" class="btn btn-primary" role="button">メッセージを送る</a></td>
+                                            <td>
+                                                <form method="POST" action="{{url_for('delete_connect')}}">
+                                                    <button type="submit" class="btn btn-warning" name="id" value="{{friend.id}}">友達解除</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if requested_friends %}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">承認待ちユーザ</h5>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>ユーザ名</th>
+                                        <th>ユーザ画像</th>
+                                        <th>コメント</th>
+                                        <th>友達承認</th>
+                                        <th>友達棄却</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for requested_friend in requested_friends %}
+                                        <tr>
+                                            <td>{{loop.index}}</td>
+                                            <td>{{requested_friend.username}}</td>
+                                            <td>{{validate_picture(requested_friend, 'image-small')}}</td>
+                                            <td>{{requested_friend.comment}}</td>
+                                            <td>
+                                                <form method="POST" action="{{url_for('user_connect')}}">
+                                                    {{connect_form.to_user_id(value=requested_friend.id)}}
+                                                    {{connect_form.connect_status(value='approve')}}
+                                                    {{connect_form.submit(class='btn btn-info', value='友達承認する')}}
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form method="POST" action="{{url_for('delete_connect')}}">
+                                                    <button type="submit" class="btn btn-warning" name="id" value="{{requested_friend.id}}">友達を棄却</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% else %}
+    <p>ログインするのじゃ</p>
+{% endif %}
+
+{% endblock %}

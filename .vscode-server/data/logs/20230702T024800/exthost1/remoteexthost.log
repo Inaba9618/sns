@@ -1,0 +1,35 @@
+2023-07-02 02:48:03.819 [info] Extension host with pid 2428 started
+2023-07-02 02:48:04.144 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-07-02 02:48:04.441 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-07-02 02:48:04.443 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-07-02 02:48:04.859 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-07-02 02:48:05.164 [info] Eager extensions activated
+2023-07-02 02:48:05.165 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-07-02 02:48:05.165 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-07-02 02:48:05.220 [info] Extension host terminating: received terminate message from renderer
+2023-07-02 02:48:05.224 [error] Failed to load translations for vscode.emmet from vscode-local:/Users/toruinaba/.vscode/extensions/ms-ceintl.vscode-language-pack-ja-1.79.2023061409/translations/extensions/vscode.emmet.i18n.json: Canceled
+2023-07-02 02:48:05.249 [error] Canceled: Canceled
+	at Object.P [as canceled] (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:7:1192)
+	at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:112:8363
+	at Array.forEach (<anonymous>)
+	at s.dispose (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:112:8328)
+	at n.terminate (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:114:9421)
+	at h.terminate (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:118:1544)
+	at p (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:128:34497)
+	at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:128:32407
+	at b.invoke (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:145)
+	at deliver (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:2121)
+	at n.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:1729)
+	at p.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:73:14783)
+	at D.E (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:73:18830)
+	at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:73:16818
+	at b.invoke (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:145)
+	at deliver (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:2121)
+	at n.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:1729)
+	at h.acceptChunk (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:73:12514)
+	at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:73:11801
+	at b.invoke (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:145)
+	at deliver (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:2121)
+	at n.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:63:1729)
+	at E.u (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/workbench/api/node/extensionHostProcess.js:128:20017) setContext undefined
+2023-07-02 02:48:05.264 [info] Extension host with pid 2428 exiting with code 0

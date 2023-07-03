@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% from "_helpers.html" import render_field %}
+{% from "_helpers.html" import validate_picture %}
+
+{% block container %}
+  <h1>新規作成</h1>
+
+  <div class="container">
+    <form method="POST">
+      <div class="form-group">
+        {{ render_field(form.title, class="form-control", placeholder="タイトル") }}
+      </div>
+      <div class="form-group">
+        {{ render_field(form.detail, class="form-control", rows=5, placeholder="詳細") }}
+      </div>
+      <div class="form-group">
+        {{ form.submit(class="btn btn-primary", value="作成") }}
+      </div>
+    </form>
+  </div>
+{% endblock %}

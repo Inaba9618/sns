@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>新規作成</h1>
+
+<div class="container">
+    <form method='POST'>
+    {{ render_field(form.title) }}
+    {{ render_field(form.detail) }}
+    {{ form.submit() }}
+</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% from "_helpers.html" import render_field %}
+
+{% block container %}
+  <!-- 投稿の表示 -->
+  <div>
+  <div class="card mb-5 mt-5 ">
+
+    <div class="card-body">
+      <p class="card-text post-user text-muted">投稿者：{{ user.username }}</p>
+      <p class="card-title">{{ post.title }}</p>
+      <p class="card-text post-detail">{{ post.detail }}</p>
+    </div>
+    <hr class="post-divider mt-2">
+  </div>
+  </div>
+  <!-- 返信一覧 -->
+  {% if post.replies %}
+    <div class="">
+      {% for reply in post.replies %}
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text post-detail">{{ reply.content }}</p>
+            <p class="card-text post-user text-muted">投稿者：{{ reply.user.username }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>まだ返信はありません。</p>
+  {% endif %}
+
+<div class="spacer"></div>
+<div class="fixed-form">
+  <form id="reply-form" method="POST" action="{{ url_for('post_detail', post_id=post.id) }}">
+    <div class="form-group">
+      {{ render_field(form.content, class="form-control", rows=4) }}
+    </div>
+    <div class="form-submit">
+    {{ form.submit(class="btn btn-primary") }}
+  </div>
+  </form>
+  <script>
+    var spacer = document.querySelector('.spacer');
+    var fixedForm = document.querySelector('.fixed-form');
+  
+    spacer.style.height = fixedForm.offsetHeight + 'px';
+  </script>
+{% endblock %}

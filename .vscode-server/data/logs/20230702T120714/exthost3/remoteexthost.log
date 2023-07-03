@@ -1,0 +1,6 @@
+2023-07-02 12:29:49.155 [info] Extension host with pid 8475 started
+2023-07-02 12:29:49.409 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-07-02 12:29:49.549 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-07-02 12:29:49.550 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-07-02 12:29:49.772 [info] Extension host terminating: received terminate message from renderer
+2023-07-02 12:29:49.773 [info] Extension host with pid 8475 exiting with code 0
