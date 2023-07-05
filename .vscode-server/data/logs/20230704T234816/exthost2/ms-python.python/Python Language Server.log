@@ -1,0 +1,17 @@
+2023-07-04 23:48:38.010 [info] [Info  - 11:48:37 PM] (2957) Pylance language server 2023.6.40 (pyright 3f84540e) starting
+2023-07-04 23:48:38.010 [info] [Info  - 11:48:38 PM] (2957) Server root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-04 23:48:38.011 [info] [Info  - 11:48:38 PM] (2957) Starting service instance "ec2-user"
+2023-07-04 23:48:38.158 [info] [Warn  - 11:48:38 PM] (2957) stubPath /home/ec2-user/typings is not a valid directory.
+2023-07-04 23:48:38.441 [info] [Info  - 11:48:38 PM] (2957) Found 3 source files
+2023-07-04 23:48:40.607 [info] [Info  - 11:48:40 PM] (2957) Background analysis(1) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-04 23:48:40.614 [info] [Info  - 11:48:40 PM] (2957) Background analysis(1) started
+2023-07-04 23:48:40.986 [info] [Info  - 11:48:40 PM] (2957) Indexer background runner(2) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist (index)
+2023-07-04 23:48:40.987 [info] [Info  - 11:48:40 PM] (2957) Indexing(2) started
+2023-07-04 23:48:43.847 [info] [Info  - 11:48:43 PM] (2957) [IDX(2)] Long operation: scan packages /home/ec2-user (2831ms)
+2023-07-04 23:48:43.848 [info] [Info  - 11:48:43 PM] (2957) scanned(2) 93 files over 1 exec env
+2023-07-04 23:48:49.327 [info] [Info  - 11:48:49 PM] (2957) [IDX(2)] Long operation: index execution environment /home/ec2-user (5169ms)
+2023-07-04 23:48:49.331 [info] [Info  - 11:48:49 PM] (2957) [IDX(2)] Long operation: index packages /home/ec2-user (5221ms)
+2023-07-04 23:48:49.332 [info] [Info  - 11:48:49 PM] (2957) indexed(2) 68 files over 1 exec env
+2023-07-04 23:48:49.368 [info] [Info  - 11:48:49 PM] (2957) Indexing finished(2).
+2023-07-04 23:48:51.928 [info] [Info  - 11:48:51 PM] (2957) [BG(1)] Long operation: checking: /home/ec2-user/flaskr/views.py (10041ms)
+2023-07-04 23:48:51.928 [info] [Info  - 11:48:51 PM] (2957) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/views.py (11430ms)

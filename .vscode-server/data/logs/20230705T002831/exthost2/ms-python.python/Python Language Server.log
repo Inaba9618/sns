@@ -1,0 +1,19 @@
+2023-07-05 00:29:05.722 [info] [Info  - 12:29:05 AM] (2969) Pylance language server 2023.6.40 (pyright 3f84540e) starting
+2023-07-05 00:29:05.723 [info] [Info  - 12:29:05 AM] (2969) Server root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-05 00:29:05.724 [info] [Info  - 12:29:05 AM] (2969) Starting service instance "ec2-user"
+2023-07-05 00:29:05.854 [info] [Info  - 12:29:05 AM] (2969) Setting pythonPath for service "ec2-user": "/bin/python3"
+2023-07-05 00:29:05.854 [info] [Warn  - 12:29:05 AM] (2969) stubPath /home/ec2-user/typings is not a valid directory.
+2023-07-05 00:29:05.981 [info] [Info  - 12:29:05 AM] (2969) Assuming Python version 3.9
+2023-07-05 00:29:06.258 [info] [Info  - 12:29:06 AM] (2969) Found 3 source files
+2023-07-05 00:29:08.438 [info] [Info  - 12:29:08 AM] (2969) Background analysis(1) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-05 00:29:08.447 [info] [Info  - 12:29:08 AM] (2969) Background analysis(1) started
+2023-07-05 00:29:08.894 [info] [Info  - 12:29:08 AM] (2969) Indexer background runner(2) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist (index)
+2023-07-05 00:29:08.896 [info] [Info  - 12:29:08 AM] (2969) Indexing(2) started
+2023-07-05 00:29:11.803 [info] [Info  - 12:29:11 AM] (2969) [IDX(2)] Long operation: scan packages /home/ec2-user (2831ms)
+2023-07-05 00:29:11.804 [info] [Info  - 12:29:11 AM] (2969) scanned(2) 93 files over 1 exec env
+2023-07-05 00:29:16.863 [info] [Info  - 12:29:16 AM] (2969) [IDX(2)] Long operation: index execution environment /home/ec2-user (4802ms)
+2023-07-05 00:29:16.890 [info] [Info  - 12:29:16 AM] (2969) [IDX(2)] Long operation: index packages /home/ec2-user (4861ms)
+2023-07-05 00:29:16.891 [info] [Info  - 12:29:16 AM] (2969) indexed(2) 68 files over 1 exec env
+2023-07-05 00:29:16.926 [info] [Info  - 12:29:16 AM] (2969) Indexing finished(2).
+2023-07-05 00:29:19.167 [info] [Info  - 12:29:19 AM] (2969) [BG(1)] Long operation: checking: /home/ec2-user/flaskr/models.py (9560ms)
+2023-07-05 00:29:19.167 [info] [Info  - 12:29:19 AM] (2969) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/models.py (10917ms)

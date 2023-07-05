@@ -339,3 +339,54 @@ flask run
 export FLASK_APP=flaskr.views
 flask run
 flask run --host=0.0.0.0 --port=8080
+sudo yum update
+sudo yum install git
+git version
+ssh-keygen
+cat /home/ec2-user/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/config
+git clone git clone
+git clone https://github.com/Inaba9618/sns
+git add .
+git init
+git add .
+git remote add origin https://github.com/Inaba9618/sns
+git commit -m "初めてのコミット"
+git add .
+git init
+git remote add origin https://github.com/Inaba9618/sns
+git pull origin main
+rm -rf .git
+ls
+cd sns
+git init
+git remote add origin https://github.com/Inaba9618/sns
+git commit -m "初めてのコミット"
+git add .
+git commit -m "初めてのコミット"
+rm -rf .git
+ls
+ls -a
+which flaskr
+cd ..
+ls
+git init
+git remote add origin https://github.com/Inaba9618/sns
+git remote -v
+git add .
+git commit -m "初めてのコミット"
+git push origin master
+git remote add origin git@github.com:Inaba9618/sns.git
+git push origin master
+rm -rf .git
+git remote add origin git@github.com:Inaba9618/sns.git
+git init
+git remote add origin git@github.com:Inaba9618/sns.git
+git add .
+git commit -m 'first time commitment'
+git push -u origin main
+git push origin main
+git branch
+git push origin master
+export FLASK_APP=flaskr.views
+flask run

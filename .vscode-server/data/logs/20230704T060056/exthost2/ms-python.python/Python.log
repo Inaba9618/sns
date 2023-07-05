@@ -1,0 +1,7 @@
+2023-07-04 06:01:17.539 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-07-04 06:01:17.539 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-07-04 06:01:17.539 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-07-04 06:01:17.539 [info] Test server listening.
+2023-07-04 06:01:17.539 [info] > /bin/python3 -I ./.vscode-server/extensions/ms-python.python-2023.10.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.10.1/pythonFiles/interpreterInfo.py
+2023-07-04 06:01:17.733 [info] Python interpreter path: /bin/python3
+2023-07-04 06:01:19.920 [info] Starting Pylance language server.

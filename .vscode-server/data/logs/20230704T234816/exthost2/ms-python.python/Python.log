@@ -1,0 +1,23 @@
+2023-07-04 23:48:36.329 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-07-04 23:48:36.329 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-07-04 23:48:36.329 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-07-04 23:48:36.329 [info] Test server listening.
+2023-07-04 23:48:36.329 [info] > python -c "import sys;print(sys.executable)"
+2023-07-04 23:48:36.329 [error] [Error: Command failed: python -c "import sys;print(sys.executable)"
+/bin/sh: line 1: python: command not found
+
+	at ChildProcess.exithandler (node:child_process:400:12)
+	at ChildProcess.emit (node:events:513:28)
+	at maybeClose (node:internal/child_process:1093:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:513:28)
+	at Pipe.<anonymous> (node:net:757:14)] {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'python -c "import sys;print(sys.executable)"'
+}
+2023-07-04 23:48:36.661 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-07-04 23:48:36.661 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-07-04 23:48:36.661 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-07-04 23:48:38.063 [info] Starting Pylance language server.

@@ -1,0 +1,16 @@
+2023-07-04 09:26:13.168 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-07-04 09:26:13.168 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-07-04 09:26:13.168 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-07-04 09:26:13.168 [info] Test server listening.
+2023-07-04 09:26:13.223 [info] > /bin/python3 -I ./.vscode-server/extensions/ms-python.python-2023.10.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.10.1/pythonFiles/interpreterInfo.py
+2023-07-04 09:26:13.601 [info] Python interpreter path: /bin/python3
+2023-07-04 09:26:15.923 [info] Starting Pylance language server.
+2023-07-04 09:26:34.646 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-04 09:26:34.906 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/2VtC.py
+2023-07-04 09:26:35.706 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/R8tm.py
+2023-07-04 09:26:45.062 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-04 09:46:30.305 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-04 10:09:52.602 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py
+2023-07-04 10:09:52.856 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/qKG9.py
+2023-07-04 10:09:53.223 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/HiRC.py
+2023-07-04 11:24:31.177 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/flaskr/views.py

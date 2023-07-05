@@ -1,9 +1,0 @@
-2023-07-02 02:10:40.780 [info] 実験 'pythonPromptNewFormatterExt' はアクティブです
-2023-07-02 02:10:40.780 [info] 実験 'pythonPromptNewToolsExt' はアクティブです
-2023-07-02 02:10:40.780 [info] 実験 'pythonSurveyNotification' はアクティブです
-2023-07-02 02:10:40.780 [info] Test server listening.
-2023-07-02 02:10:40.780 [info] Python インタープリター パス: /usr/bin/python3
-2023-07-02 02:10:43.092 [info] Pylance 言語サーバーを開始しています。
-2023-07-02 02:11:17.716 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/744da2ba/eveQ.py
-2023-07-02 02:18:57.673 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/22aa.py
-2023-07-02 02:19:45.673 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/-7f818ac4/LNiZ.py

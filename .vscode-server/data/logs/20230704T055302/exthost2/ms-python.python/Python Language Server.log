@@ -1,0 +1,25 @@
+2023-07-04 05:55:30.463 [info] [Info  - 5:55:30 AM] (90073) Pylance language server 2023.6.40 (pyright 3f84540e) starting
+2023-07-04 05:55:30.478 [info] [Info  - 5:55:30 AM] (90073) Server root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-04 05:55:30.478 [info] [Info  - 5:55:30 AM] (90073) Starting service instance "ec2-user"
+2023-07-04 05:55:30.604 [info] [Info  - 5:55:30 AM] (90073) Setting pythonPath for service "ec2-user": "/bin/python3"
+2023-07-04 05:55:30.604 [info] [Warn  - 5:55:30 AM] (90073) stubPath /home/ec2-user/typings is not a valid directory.
+2023-07-04 05:55:30.710 [info] [Info  - 5:55:30 AM] (90073) Assuming Python version 3.9
+2023-07-04 05:55:30.937 [info] [Info  - 5:55:30 AM] (90073) Found 3 source files
+2023-07-04 05:55:32.721 [info] [Info  - 5:55:32 AM] (90073) Background analysis(1) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-04 05:55:32.721 [info] [Info  - 5:55:32 AM] (90073) Background analysis(1) started
+2023-07-04 05:55:33.535 [info] [Info  - 5:55:33 AM] (90073) Indexer background runner(2) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist (index)
+2023-07-04 05:55:33.535 [info] [Info  - 5:55:33 AM] (90073) Indexing(2) started
+2023-07-04 05:55:36.370 [info] [Info  - 5:55:36 AM] (90073) [BG(1)] Long operation: checking: /home/ec2-user/flaskr/views.py (2161ms)
+2023-07-04 05:55:36.370 [info] [Info  - 5:55:36 AM] (90073) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/views.py (3611ms)
+2023-07-04 05:55:36.878 [info] [Info  - 5:55:36 AM] (90073) [IDX(2)] Long operation: scan packages /home/ec2-user (2895ms)
+2023-07-04 05:55:36.879 [info] [Info  - 5:55:36 AM] (90073) scanned(2) 93 files over 1 exec env
+2023-07-04 05:55:40.607 [info] [Info  - 5:55:40 AM] (90073) [IDX(2)] Long operation: index execution environment /home/ec2-user (3676ms)
+2023-07-04 05:55:40.620 [info] [Info  - 5:55:40 AM] (90073) [IDX(2)] Long operation: index packages /home/ec2-user (3756ms)
+2023-07-04 05:55:40.621 [info] [Info  - 5:55:40 AM] (90073) indexed(2) 68 files over 1 exec env
+2023-07-04 05:55:40.664 [info] [Info  - 5:55:40 AM] (90073) Indexing finished(2).
+2023-07-04 05:56:53.774 [info] [Info  - 5:56:53 AM] (90073) [BG(1)] Long operation: getSemanticTokens full at /home/ec2-user/flaskr/views.py (4182ms)
+2023-07-04 05:57:14.594 [info] [Info  - 5:57:14 AM] (90073) [BG(1)] Long operation: checking: /home/ec2-user/flaskr/models.py (7247ms)
+2023-07-04 05:57:14.709 [info] [Info  - 5:57:14 AM] (90073) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/models.py (7271ms)
+2023-07-04 05:57:30.510 [info] [Info  - 5:57:30 AM] (90073) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/models.py (2642ms)
+2023-07-04 05:57:53.752 [info] [Info  - 5:57:53 AM] (90073) [BG(1)] Long operation: checking: /home/ec2-user/flaskr/models.py (22720ms)
+2023-07-04 05:57:53.755 [info] [Info  - 5:57:53 AM] (90073) [BG(1)] Long operation: analyzing: /home/ec2-user/flaskr/models.py (22864ms)

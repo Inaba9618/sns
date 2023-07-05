@@ -1,0 +1,18 @@
+2023-07-04 09:26:15.873 [info] [Info  - 9:26:15 AM] (5600) Pylance language server 2023.6.40 (pyright 3f84540e) starting
+2023-07-04 09:26:15.875 [info] [Info  - 9:26:15 AM] (5600) Server root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-04 09:26:15.875 [info] [Info  - 9:26:15 AM] (5600) Starting service instance "ec2-user"
+2023-07-04 09:26:16.087 [info] [Info  - 9:26:16 AM] (5600) Setting pythonPath for service "ec2-user": "/bin/python3"
+2023-07-04 09:26:16.088 [info] [Warn  - 9:26:16 AM] (5600) stubPath /home/ec2-user/typings is not a valid directory.
+2023-07-04 09:26:16.269 [info] [Info  - 9:26:16 AM] (5600) Assuming Python version 3.9
+2023-07-04 09:26:16.628 [info] [Info  - 9:26:16 AM] (5600) Found 3 source files
+2023-07-04 09:26:18.496 [info] [Info  - 9:26:18 AM] (5600) Background analysis(1) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist
+2023-07-04 09:26:18.497 [info] [Info  - 9:26:18 AM] (5600) Background analysis(1) started
+2023-07-04 09:26:19.353 [info] [Info  - 9:26:19 AM] (5600) Indexer background runner(2) root directory: /home/ec2-user/.vscode-server/extensions/ms-python.vscode-pylance-2023.6.40/dist (index)
+2023-07-04 09:26:19.354 [info] [Info  - 9:26:19 AM] (5600) Indexing(2) started
+2023-07-04 09:26:22.536 [info] [Info  - 9:26:22 AM] (5600) [IDX(2)] Long operation: scan packages /home/ec2-user (3118ms)
+2023-07-04 09:26:22.537 [info] [Info  - 9:26:22 AM] (5600) scanned(2) 93 files over 1 exec env
+2023-07-04 09:26:27.726 [info] [Info  - 9:26:27 AM] (5600) [IDX(2)] Long operation: index execution environment /home/ec2-user (4867ms)
+2023-07-04 09:26:27.727 [info] [Info  - 9:26:27 AM] (5600) [IDX(2)] Long operation: index packages /home/ec2-user (4938ms)
+2023-07-04 09:26:27.727 [info] [Info  - 9:26:27 AM] (5600) indexed(2) 68 files over 1 exec env
+2023-07-04 09:26:27.809 [info] [Info  - 9:26:27 AM] (5600) Indexing finished(2).
+2023-07-04 09:26:31.690 [info] [Info  - 9:26:31 AM] (5600) [BG(1)] Long operation: getSemanticTokens full at /home/ec2-user/flaskr/views.py (11291ms)
