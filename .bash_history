@@ -390,3 +390,18 @@ git branch
 git push origin master
 export FLASK_APP=flaskr.views
 flask run
+export FLASK_APP=flaskr.views
+flask run
+git add .
+git commit -m 'mypage'
+git push origin master
+flask run --host=0.0.0.0 --port=8080
+nohup flask run --host=0.0.0.0 --port=8080 &
+export FLASK_APP=flaskr.views
+flask run
+export FLASK_APP=flaskr.views
+flask run
+exponohup flask run --host=0.0.0.0 --port=8080 &
+kill 5695
+export FLASK_DEBUG=1
+nohup flask run --host=0.0.0.0 --port=8080 &

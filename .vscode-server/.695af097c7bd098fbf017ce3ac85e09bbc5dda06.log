@@ -5,18 +5,18 @@
 * the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
 * the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
 *
-Server bound to 127.0.0.1:39787 (IPv4)
-Extension host agent listening on 39787
+Server bound to 127.0.0.1:38963 (IPv4)
+Extension host agent listening on 38963
 
-[00:28:31] 
-
-
+[05:18:40] 
 
 
-[00:28:31] Extension host agent started.
-[00:28:32] [127.0.0.1][ce5efc52][ManagementConnection] New connection established.
-[00:28:32] [127.0.0.1][83d4172a][ExtensionHostConnection] New connection established.
-[00:28:32] [127.0.0.1][83d4172a][ExtensionHostConnection] <2655> Launched Extension Host Process.
+
+
+[05:18:40] Extension host agent started.
+[05:18:40] [127.0.0.1][3830506e][ManagementConnection] New connection established.
+[05:18:41] [127.0.0.1][3d8a3df6][ExtensionHostConnection] New connection established.
+[05:18:41] [127.0.0.1][3d8a3df6][ExtensionHostConnection] <11729> Launched Extension Host Process.
 [IPC Library: Pty Host]  WARN Shell integration cannot be enabled for executable "/bin/sh" and args [
   '-c',
   'wget --version > /dev/null\n' +
@@ -77,19 +77,19 @@ Extension host agent listening on 39787
     'fi\n' +
     'exit 0'
 ]
-[00:28:52] [127.0.0.1][ce5efc52][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
-[00:28:52] [127.0.0.1][83d4172a][ExtensionHostConnection] <2655> Extension Host Process exited with code: 0, signal: null.
+[05:18:46] [127.0.0.1][3830506e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[05:18:46] [127.0.0.1][3d8a3df6][ExtensionHostConnection] <11729> Extension Host Process exited with code: 0, signal: null.
 Cancelling previous shutdown timeout
-[00:28:52] Cancelling previous shutdown timeout
+[05:18:46] Cancelling previous shutdown timeout
 Last EH closed, waiting before shutting down
-[00:28:52] Last EH closed, waiting before shutting down
+[05:18:46] Last EH closed, waiting before shutting down
 Got delay-shutdown request while in shutdown timeout, delaying
-[00:28:56] Got delay-shutdown request while in shutdown timeout, delaying
+[05:18:50] Got delay-shutdown request while in shutdown timeout, delaying
 Cancelling previous shutdown timeout
-[00:28:56] Cancelling previous shutdown timeout
-[00:28:57] [127.0.0.1][9e7afd7b][ManagementConnection] New connection established.
-[00:28:57] [127.0.0.1][330a0791][ExtensionHostConnection] New connection established.
-[00:28:57] [127.0.0.1][330a0791][ExtensionHostConnection] <2812> Launched Extension Host Process.
+[05:18:50] Cancelling previous shutdown timeout
+[05:18:51] [127.0.0.1][44020702][ManagementConnection] New connection established.
+[05:18:51] [127.0.0.1][48171bd5][ExtensionHostConnection] New connection established.
+[05:18:51] [127.0.0.1][48171bd5][ExtensionHostConnection] <11833> Launched Extension Host Process.
 [IPC Library: Pty Host]  WARN Shell integration cannot be enabled for executable "/bin/sh" and args [
   '-c',
   'wget --version > /dev/null\n' +
@@ -165,7 +165,7 @@ stack trace: CodeExpectedError: Could not find pty on pty host
     at process.emit (node:events:513:28)
     at emit (node:internal/child_process:939:14)
     at processTicksAndRejections (node:internal/process/task_queues:84:21)
-[00:28:59] Error [CodeExpectedError]: Could not find pty on pty host
+[05:18:53] Error [CodeExpectedError]: Could not find pty on pty host
     at k.L (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:6920)
     at k.updateTitle (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:2627)
     at Object.call (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:17:5058)
@@ -180,4 +180,4 @@ stack trace: CodeExpectedError: Could not find pty on pty host
     at emit (node:internal/child_process:939:14)
     at processTicksAndRejections (node:internal/process/task_queues:84:21)
 New EH opened, aborting shutdown
-[00:33:56] New EH opened, aborting shutdown
+[05:23:50] New EH opened, aborting shutdown

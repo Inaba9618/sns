@@ -1,0 +1,7 @@
+2023-07-05 01:33:50.075 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-07-05 01:33:50.075 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-07-05 01:33:50.075 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-07-05 01:33:50.075 [info] Test server listening.
+2023-07-05 01:33:50.075 [info] Python interpreter path: /bin/python3
+2023-07-05 01:33:51.942 [info] Starting Pylance language server.
+2023-07-05 01:36:44.371 [info] Discover tests for workspace name: ec2-user - uri: /home/ec2-user/.vscode-server/data/User/History/e526a8f/YL2z.py

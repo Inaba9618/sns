@@ -1,0 +1,34 @@
+2023-07-05 01:29:29.847 [info] 
+
+
+
+
+2023-07-05 01:29:29.891 [info] Extension host agent started.
+2023-07-05 01:29:30.256 [info] [127.0.0.1][7394dffd][ManagementConnection] New connection established.
+2023-07-05 01:29:30.478 [info] [127.0.0.1][9aaeb138][ExtensionHostConnection] New connection established.
+2023-07-05 01:29:30.962 [info] [127.0.0.1][9aaeb138][ExtensionHostConnection] <12589> Launched Extension Host Process.
+2023-07-05 01:29:38.398 [info] [127.0.0.1][7394dffd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-07-05 01:29:38.418 [info] [127.0.0.1][9aaeb138][ExtensionHostConnection] <12589> Extension Host Process exited with code: 0, signal: null.
+2023-07-05 01:29:38.419 [info] Cancelling previous shutdown timeout
+2023-07-05 01:29:38.419 [info] Last EH closed, waiting before shutting down
+2023-07-05 01:29:42.263 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-07-05 01:29:42.263 [info] Cancelling previous shutdown timeout
+2023-07-05 01:29:42.734 [info] [127.0.0.1][06ef525b][ManagementConnection] New connection established.
+2023-07-05 01:29:42.968 [info] [127.0.0.1][26353668][ExtensionHostConnection] New connection established.
+2023-07-05 01:29:42.979 [info] [127.0.0.1][26353668][ExtensionHostConnection] <12747> Launched Extension Host Process.
+2023-07-05 01:29:45.246 [error] CodeExpectedError: Could not find pty on pty host
+    at k.L (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:6920)
+    at k.updateTitle (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:28:2627)
+    at Object.call (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:17:5058)
+    at h.s (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at h.q (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at l.invoke (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at u.deliver (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:2125)
+    at s.fire (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:11:1733)
+    at process.z (/home/ec2-user/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/out/vs/platform/terminal/node/ptyHostMain.js:9:21144)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:939:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-07-05 01:34:42.263 [info] New EH opened, aborting shutdown
+2023-07-05 01:52:04.551 [warning] No ptyHost heartbeat after 6 seconds

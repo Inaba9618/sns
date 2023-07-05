@@ -33,3 +33,103 @@ Press CTRL+C to quit
 221.188.16.235 - - [30/Jun/2023 02:17:20] "GET /static/css/style.css HTTP/1.1" 304 -
 221.188.16.235 - - [30/Jun/2023 02:19:54] "GET /login HTTP/1.1" 200 -
 221.188.16.235 - - [30/Jun/2023 02:19:54] "GET /static/css/style.css HTTP/1.1" 304 -
+ * Serving Flask app 'flaskr.views'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.1.29:8080
+Press CTRL+C to quit
+221.188.16.235 - - [05/Jul/2023 01:13:24] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 01:13:24] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:13:24] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:13:36] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:13:36] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:13:40] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:13:41] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:14:53] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:14:53] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:07] "POST /login HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 01:15:07] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:15:07] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:07] "GET /static/images/default_image.png HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:20] "GET /post_detail/7 HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:15:20] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:34] "GET /create_post HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:15:35] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:39] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:15:39] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:39] "GET /static/images/default_image.png HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:15:44] "GET /setting HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:15:44] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:32:31] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 01:32:31] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 01:32:31] "GET /static/images/default_image.png HTTP/1.1" 304 -
+ * Serving Flask app 'flaskr.views'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.1.29:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 110-094-718
+221.188.16.235 - - [05/Jul/2023 02:51:22] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 02:51:23] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 02:51:23] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 02:52:21] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 02:52:21] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 02:52:21] "GET /static/css/style.css HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 02:52:39] "POST /login HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 02:52:39] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 02:52:40] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 02:52:40] "GET /static/images/default_image.png HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 02:52:52] "GET /create_post HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 02:52:52] "GET /static/css/style.css HTTP/1.1" 304 -
+198.235.24.24 - - [05/Jul/2023 03:00:00] code 400, message Bad request version ('À(À$À\x14À')
+198.235.24.24 - - [05/Jul/2023 03:00:00] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03}Ö?\x10þÜlõ\\nÁÐr\x7f\x11;\x1bUÒ@Uc\x95ÅUd$«ë5 i\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+205.210.31.251 - - [05/Jul/2023 03:41:08] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ø\x92\x15\x96µÊ«.\x01JW|\x0et\x13\x7f¥ep0\x93ûes¼B~\x91UC\x7f)\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+205.210.31.251 - - [05/Jul/2023 03:41:08] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ø\x92\x15\x96µÊ«.\x01JW|\x0et\x13\x7f¥ep0\x93ûes¼B~\x91UC\x7f)\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+221.188.16.235 - - [05/Jul/2023 03:52:44] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 03:52:44] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 03:52:45] "GET /static/css/style.css HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 03:52:46] "GET /favicon.ico HTTP/1.1" 404 -
+221.188.16.235 - - [05/Jul/2023 03:53:29] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 03:53:30] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 03:53:30] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 04:29:21] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 04:29:21] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:29:22] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 04:29:36] "POST /login HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 04:29:36] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:29:36] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 04:29:36] "GET /static/user_images/5_1688464793.jpg HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:29:55] "GET /post_detail/1 HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:29:55] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 04:30:02] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:30:08] "POST /login HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 04:30:09] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:30:09] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 04:30:09] "GET /static/user_images/4_1688277739.jpg HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:30:15] "GET /post_detail/2 HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 04:30:16] "GET /static/css/style.css HTTP/1.1" 304 -
+193.35.18.33 - - [05/Jul/2023 05:05:40] "CONNECT google.com:443 HTTP/1.1" 404 -
+65.49.1.29 - - [05/Jul/2023 05:18:18] "GET / HTTP/1.1" 302 -
+65.49.1.34 - - [05/Jul/2023 05:18:31] "GET / HTTP/1.1" 302 -
+65.49.1.25 - - [05/Jul/2023 05:18:32] "GET /login HTTP/1.1" 200 -
+65.49.1.35 - - [05/Jul/2023 05:18:38] "GET /favicon.ico HTTP/1.1" 404 -
+65.49.1.36 - - [05/Jul/2023 05:18:47] "GET http://api.ipify.org/?format=json HTTP/1.1" 302 -
+65.49.1.33 - - [05/Jul/2023 05:18:54] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 -
+221.188.16.235 - - [05/Jul/2023 05:19:51] "GET / HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 05:19:51] "GET /login HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 05:19:52] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 05:20:02] "POST /login HTTP/1.1" 302 -
+221.188.16.235 - - [05/Jul/2023 05:20:02] "GET / HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 05:20:02] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 05:20:02] "GET /static/user_images/4_1688277739.jpg HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 05:20:15] "GET /setting HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 05:20:15] "GET /static/css/style.css HTTP/1.1" 304 -
+221.188.16.235 - - [05/Jul/2023 05:20:20] "GET /post_detail/1 HTTP/1.1" 200 -
+221.188.16.235 - - [05/Jul/2023 05:20:20] "GET /static/css/style.css HTTP/1.1" 304 -
+107.170.240.12 - - [05/Jul/2023 05:20:54] "GET /manager/text/list HTTP/1.1" 404 -
